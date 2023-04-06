@@ -1,0 +1,54 @@
+factory
+constructr
+L3@rn@@sp!r3
+date
+backtick
+mmath function
+
+object.keys               
+
+For plain objects, the following methods are available:
+
+Object.keys(obj) – returns an array of keys.
+Object.values(obj) – returns an array of values.
+Object.entries(obj) – returns an array of [key, value] pairs.
+object.entries
+
+hasownproperty()
+
+object.assign()
+...
+key in object
+
+includes
+indexof
+
+
+find()
+
+arr.length =0
+
+
+vaalue
+
+true or false
+map filter reduce
+
+
+splice slice sort
+
+
+function
+iif functiobn
+
+arguements
+rest bind apply
+
+call
+
+
+try & catch
+
+ get set
+
+ 
