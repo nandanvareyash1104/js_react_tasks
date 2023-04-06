@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2oth task</title>
+
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <form action="" class="form">
+      <input
+        type="text"
+        name="location"
+        id="loc"
+        class="input"
+        placeholder="Location"
+        autofocus
+      /><br />
+
+      <input
+        type="text"
+        name="description"
+        id="desc"
+        class="input"
+        placeholder="Description"
+      /><br />
+
+      <select name="country" id="country" title="xyz" class="input">
+        <option disabled selected value="">Country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="England">England</option></select
+      ><br />
+
+      <select name="state" id="state" title="xyz" class="input">
+        <option disabled selected value="">State</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Florida">Florida</option>
+        <option value="California">California</option>
+        <option value="Toronto">Ontario</option>
+        <option value="Vancouvar">Alberta</option>
+        <option value="M.P.">London</option>
+        <option value="M.P.">Manchester</option></select
+      ><br />
+
+      <select name="city" id="city" title="xyz" class="input">
+        <option disabled selected value="">City</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Vadodara">Vadodara</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Miami">Miami</option>
+        <option value="Orlando">Orlando</option>
+        <option value="Loa Angles">Los Angles</option>
+        <option value="sanjose">sanjose</option>
+        <option value="Toronto">Toronto</option>
+        <option value="Pune">Ottava</option>
+        <option value="Edmonton">Edmonton</option>
+        <option value="Calgary">Calgary</option>
+        <option value="Westminster">Westminster</option>
+        <option value="Kensington">Kensington</option>
+        <option value="Bolton">Bolton</option>
+        <option value="Stretford">Stretford</option></select
+      ><br />
+
+      <input
+        type="submit"
+        value="Submit"
+        id="submit"
+        title="xyz"
+        onclick="event.preventDefault(),onFormSubmit()"
+      />
+    </form>
+
+    <!-- tag--------------------------------------------------------------------------------------------------------------- -->
+    <div id="tags">
+      <label for="ptag">Select a tag:</label><br /><br />
+      <select id="ptag">
+        <option value="">-- Select --</option>
+        <option value="Home">Home</option>
+        <option value="Office">Office</option>
+        <option value="Others">Others</option>
+      </select>
+      <button id="add-tag">Add</button>
+      <button id="sbtn">Submit</button>
+      <button id="remove-tag">Remove</button>
+    </div>
+    <br /><br />
+
+    <!-- --------------------------table------------------------------------------------------------------------------------------------------ -->
+
+    <table border="1">
+      <thead>
+        <th>
+          <input
+            type="checkbox"
+            class=""
+            name=""
+            title="xyz"
+            onclick="selects()"
+          />
+        </th>
+        <th>Location</th>
+        <th>description</th>
+        <th>
+          <select
+            name="country"
+            title="xyz"
+            id="tcountry"
+            onchange="filterTable()"
+          >
+            <option selected value="">Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="England">England</option>
+          </select>
+        </th>
+        <th>
+          <select name="state" title="xyz" id="tstate" onchange="filterTable()">
+            <option selected value="">State</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Florida">Florida</option>
+            <option value="California">California</option>
+            <option value="Toronto">Ontario</option>
+            <option value="Vancouvar">Alberta</option>
+            <option value="M.P.">London</option>
+            <option value="M.P.">Manchester</option>
+          </select>
+        </th>
+        <th>
+          <select name="city" title="xyz" id="tcity" onchange="filterTable()">
+            <option selected value="">City</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Miami">Miami</option>
+            <option value="Orlando">Orlando</option>
+            <option value="Loa Angles">Los Angles</option>
+            <option value="sanjose">sanjose</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Pune">Ottava</option>
+            <option value="Edmonton">Edmonton</option>
+            <option value="Calgary">Calgary</option>
+            <option value="Westminster">Westminster</option>
+            <option value="Kensington">Kensington</option>
+            <option value="Bolton">Bolton</option>
+            <option value="Stretford">Stretford</option>
+          </select>
+        </th>
+        <th>Tags</th>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="./form.js"></script>
+  </body>
+</html>
